@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>w3</title>
+</head>
+
+<body>
+
+    <div class="modal fade" id="newsLetter" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <span type="button" class="close" data-dismiss="modal">&times</span>
+                </div>
+                <div class="modal-body">
+                    <h3 class="modal-title">N E W S L E T T E R</h3>
+                    <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+                    <input type="text" placeholder="Enter e-mail">
+                    <button data-dismiss="modal">Subscribe</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="top-nav row d-md-none col-12 bg-black m-0 p-0" id="topNav">
+        <h4 class="m-3">LOGO</h4>
+        <i class="bar-btn fas fa-bars ml-auto p-4" onclick="openNav()"></i>
+
+    </div>
+
+    <div class="main d-flex col-12 justify-content-center p-0" id="home">
+
+        <div class="col-12 col-lg-10 row p-0">
+
+            <div class="d-none d-md-block col-md-3 col-lg-2 px-0" id="vertical-nav" onresize="resizeFun()">
+
+                <div class="vertical-nav pr-0">
+                    <div id="logo" class="pl-3 mt-3">LOGO</div>
+
+                    <div class="mb-4 p-0">
+                        <p class="pl-3"><a href="#home">Shirts</a></p>
+                        <p class="pl-3"><a href="#home">Dresses</a></p>
+                        <p data-target="#jeans" data-toggle="collapse" class="pl-3">Jeans<i
+                                class="fas fa-caret-down ml-2"></i>
+                        </p>
+                        <div class="collapse ml-4" id="jeans">
+                            <p><a href="#home">Skinny</a></p>
+                            <p><a href="#home">Relaxed</a></p>
+                            <p><a href="#home">Bootcut</a></p>
+                            <p><a href="#home">Straight</a></p>
+                        </div>
+
+                        <p class="pl-3"><a href="#home"> Jackets</a></p>
+                        <p class="pl-3"><a href="#home">Gymwear</a></p>
+                        <p class="pl-3"><a href="#home">Blazers</a></p>
+                        <p class="pl-3"><a href="#home">Shoes</a></p>
+                    </div>
+
+                    <div>
+                        <p class="pl-3"><a href="#subs">Contact</a></p>
+                        <p class="pl-3" data-toggle="modal" data-target="#newsLetter">Newsletter</p>
+                        <p class="pl-3"><a href="#subs">Subscribe</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="justify-content-start d-flex col-12 col-md-9 col-lg-10 p-0 body" id="body">
+                <div class="p-0">
+
+                    <div class="row jeans-icon px-0 py-3 mx-3">
+                        <div>Jeans</div>
+                        <div class="ml-auto">
+                            <i class="fas fa-shopping-cart mr-3"></i>
+                            <i class="fas fa-search "></i>
+                        </div>
+                    </div>
+
+                    <div class="images row mx-3">
+
+                        <div class="div-img">
+                            <img src="img/jeans.jpg" class="col-12 p-0">
+                            <span class="arrival ml-4">
+                                <h1>New arrivals</h1>
+                                <h2>COLLECTION 2016</h2>
+                                <h6>SHOP NOW</h6>
+                            </span>
+                        </div>
+
+                        <div class="img-items row">
+                            <p class="col-12 pt-3">8 items</p>
+
+                            <div class="col-6 col-lg-3">
+                                <img src="img/jeans1.jpg">
+                                <p class="mb-0 mt-3">Ripped Skinny Jeans</p>
+                                <p><b>$24.99</b></p>
+                            </div>
+
+                            <div class="col-6 col-lg-3" id="div-buy">
+
+                                <img src="img/jeans2.jpg">
+                                <span id="buy-now">Buy Now<i class="fas fa-shopping-cart"></i></span>
+
+                                <div class="new">New</div>
+                                <p class="mb-0 mt-3">Mega Ripped Jeans</p>
+                                <p><b>$19.99</b></p>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <img src="img/jeans3.jpg">
+                                <p class="mb-0 mt-3">Washed Skinny Jeans</p>
+                                <p><b>$20.50</b></p>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <img src="img/jeans2.jpg">
+                                <p class="mb-0 mt-3">Mega Ripped Jeans</p>
+                                <p><b>$19.99</b></p>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <img src="img/jeans4.jpg">
+                                <p class="mb-0 mt-3">Vintage Skinny Jeans</p>
+                                <p><b>$14.99</b></p>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <img src="img/jeans3.jpg">
+                                <p class="mb-0 mt-3">Washed Skinny Jeans</p>
+                                <p><b>$20.50</b></p>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <img src="img/jeans4.jpg">
+                                <p class="mb-0 mt-3">Vintage Skinny Jeans</p>
+                                <p><b>$14.99</b></p>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <img src="img/jeans1.jpg">
+                                <p class="mb-0 mt-3">Ripped Skinny Jeans</p>
+                                <p><b>$24.99</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="subs bg-black text-white p-3" id="subs">
+                        <h2 class="mt-4 mb-3">Subscribe</h2>
+                        <p>To get special offers and VIP treatment:</p>
+                        <input type="text" placeholder="Enter e-mail" class="mb-3 p-2">
+                        <br>
+                        <button class="btn-red mb-3 py-2 px-3">Subscribe</button>
+                    </div>
+
+
+                    <div class="row bg-gray py-5">
+
+                        <div class="contact col-4 pl-4">
+                            <p class="p-0 m-0">contact</p>
+                            <p>Questions? Go ahead.</p>
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Subject">
+                            <input type="text" placeholder="Message">
+                            <button class="bg-black w-100">send</button>
+                        </div>
+
+                        <div class="about col-4">
+                            <p class="p-0 m-0">About</p>
+                            <p><a href="#">About us</a></p>
+                            <p><a href="#">We're hiring</a></p>
+                            <p><a href="#">Support</a></p>
+                            <p><a href="#">Find store</a></p>
+                            <p><a href="#">Shipment</a></p>
+                            <p><a href="#">Payment</a></p>
+                            <p><a href="#">Gift card</a></p>
+                            <p><a href="#">Return</a></p>
+                            <p><a href="#">Help</a></p>
+                        </div>
+
+                        <div class="col-4">
+                            <p class="store-title">Store</p>
+                            <p class="store-sub">
+                                <i class="fas fa-map-marker-alt pr-1"></i>Company Name
+                            </p>
+                            <p class="store-sub">
+                                <i class="fas fa-phone pr-1"></i>0044123123
+                            </p>
+                            <p class="store-sub">
+                                <i class="fas fa-envelope pr-1"></i>ex@mail.com
+                            </p>
+                            <p class="store-title">We accept</p>
+                            <p class="store-sub">
+                                <i class="fab fa-cc-amex pr-1"></i>Amex
+                            </p>
+                            <p class="store-sub">
+                                <i class="far fa-credit-card pr-1"></i>Credit Card
+                            </p>
+                            <p class="store-icon">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-snapchat"></i>
+                                <i class="fab fa-pinterest-p"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="footer bg-black py-3">
+                        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
